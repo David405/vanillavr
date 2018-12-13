@@ -1,5 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
+    background-color: rgb(216, 216, 216);
   }
   
   .overlay {
@@ -81,4 +82,15 @@ body {
 
   .closebtn {
       color: yellow;
+  }
+
+  .intro {
+    color: rgb(189, 189, 9);
+    text-align: center;
+    font-size: 100%;
+  }
+
+  .intro2 {
+    text-align: center;
+    font-size: 200%;
   }
