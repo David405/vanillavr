@@ -4,11 +4,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poiret+One|Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans+Condensed:300|Overlock|Quicksand" rel="stylesheet">
+
                 <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
-        
+        <!-- Animate -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
@@ -20,17 +24,20 @@
         <title>Vanilla VR</title>
     </head>
     <body>
-        <div class="main-text">
-        <iframe class="g-fullheight--xs" style="width: 100%; border: none;" frameborder="0" allow="vr,gyroscope,accelerometer,fullscreen" scrolling="no" allowfullscreen="true" 
-            src="https://kuula.co/share/7Pc8v?fs=1&vr=0&thumbs=1&chromeless=0&logo=0" data-width="100%" data-height="640px"></iframe>   
-                
-                <p class="welcome">Welcome to the vanilla VR</p>
+                   <!-- First Parallax Image with Logo Text -->
+            <div class="bgimg-1 w3-display-container" id="home">
+                    <div class="w3-display-middle" style="white-space:nowrap;">
+                    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide welcome-text w3-animate-opacity">IMMERSIVE <span>GAMING</span><span class="w3-hide-small"></span> AND MOVIES</span>
+                    </div>
+                </div>
+                <a href="#" id="scroll" style="display: none;"><span></span></a>
+        <div class="main-text">         
+                <p class="welcome w3-animate-opacity">Welcome to Vanilla VR</p>
 
-                <p class="welcome2">Enjoy this season with family and friends in Virtual Reality, PC and Console Gaming conveniently priced</p>
+                <p class="welcome2 w3-animate-opacity">Enjoy this season with family and friends in Virtual Reality, PC and Console Gaming conveniently priced</p>
         </div>
-                <div class="box">
     
-        <div class="row services">
+        <div id="services" class="row services w3-animate-opacity">
              
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                
@@ -39,11 +46,12 @@
                         <i class="fa fa-power-off fa-2x" style="color: rgb(221, 42, 42)" aria-hidden="true"></i>
                         
                         <div class="title">
-                            <h4>High tech</h4>
+                            <p>High tech</p>
                         </div>
                         
                         <div class="text">
-                            <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                            <span>Our state of the art Virtual Reality headsets is made by Oculus and PlayStation. 
+                                Both headsets are known for their low latency and seamless </span>
                         </div>
                         
                      </div>
@@ -56,11 +64,12 @@
                         <i class="fa fa-child fa-2x" style="color: rgb(221, 42, 42)" aria-hidden="true"></i>
                         
                         <div class="title">
-                            <h4>Virtual Reality Movies & Experiences</h4>
+                            <p>Virtual Reality Movies & Experiences</p>
                         </div>
                         
                         <div class="text">
-                            <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                            <span>We have over 100 movies, videos and experiences to choose from.
+                                 From Google Earth and The Nun to Youtube VR.</span>
                         </div>
                         
                      </div>
@@ -73,11 +82,11 @@
                         <i class="fa fa-gamepad fa-2x"  style="color: rgb(221, 42, 42)" aria-hidden="true"></i>
                         
                         <div class="title">
-                            <h4>Console VR Gaming</h4>
+                            <p>Console VR Gaming</p>
                         </div>
                         
                         <div class="text">
-                            <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                            <span>Enjoy the best of immersive gaming with PSVR, we also have a good collection of VR games such as Gran Turismo, Doom VFR, Firewall zero hour, Bravo team.</span>
                         </div>
                         
                      </div>
@@ -90,11 +99,12 @@
                         <i class="fa fa-television fa-2x" style="color: rgb(221, 42, 42)" aria-hidden="true"></i>
                         
                         <div class="title">
-                            <h4>PC Gaming</h4>
+                            <p>PC Gaming</p>
                         </div>
                         
                         <div class="text">
-                            <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                            <span>Get the best experience of screen gaming with our powerful ASUS ROG gaming rig,
+                                 play games at a minimum of 60 FPS either alone or better paly multiplayer mdes and enjoy with friends</span>
                         </div>
                         
                      </div>
@@ -102,154 +112,55 @@
         </div>      
     </div>
 
-        <div class="parallax"></div>
+        <div class="parallax w3-animate-opacity"></div>
 
-        <div class="row about">
-            <div class="col-lg-6 col-md-6 col-sm- col-xs-12 image1">
-                <img src="images/giphy.gif" style="width: 100%; height: 400px;">
-            </div>
+        <div id="about" class="row about w3-animate-opacity">
 
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 about1">
-                About Vanilla VR
+             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 about1">
+                About vanilla VR
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 about2">
-                    <p>We are a modern-aged arcade utilizing the technology of the best Virtual Reality there is to offer.</p>
+                <p>We are a modern-aged arcade utilizing the technology of the best Virtual Reality there is to offer.</p>
 
-                    <p>Play by yourself, split time among a group, or get separate booths to play multiplayer games together!</p>
+                <p>Play by yourself, split time among a group, or get separate booths to play multiplayer games together!</p>
+                
+                <p>Virtual Reality not your thing? Play with our gaming rig on a couch TV or personal monitor</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 image1">
                     
-                    <p>Virtual Reality not your thing? Play one of multiple gaming consoles on a couch co-op TV or personal monitor.
-                     Or sit down and relax at our café bar for a cup of coffee, tea, or gourmet hot cocoa.</p>
-                </div>
+                    <img src="images/giphy.gif" style="width: 100%; height: 400px;">
+               </div>
+       </div>
+           
+
         </div>
             
-            <div class="parallax2"></div>
+            <div class="parallax2 w3-animate-opacity"></div>
 
-           <div style="height:500px;">
-                <div class="row images">
-             
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-                            <div class="box-part text-center">
-                                
-                                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-                                
-                                <div class="title">
-                                    <h4>Instagram</h4>
-                                </div>
-                                
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-                                
-                                <a href="#">Learn More</a>
-                                
-                             </div>
-                        </div>   
-                        
-                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-                            <div class="box-part text-center">
-                                
-                                <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-                            
-                                <div class="title">
-                                    <h4>Twitter</h4>
-                                </div>
-                                
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-                                
-                                <a href="#">Learn More</a>
-                                
-                             </div>
-                        </div>   
-                        
-                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-                            <div class="box-part text-center">
-                                
-                                <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-                                
-                                <div class="title">
-                                    <h4>Facebook</h4>
-                                </div>
-                                
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-                                
-                                <a href="#">Learn More</a>
-                                
-                             </div>
-                        </div>   
-                        
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-                            <div class="box-part text-center">
-                                
-                                <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
-                                
-                                <div class="title">
-                                    <h4>Pinterest</h4>
-                                </div>
-                                
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-                                
-                                <a href="#">Learn More</a>
-                                
-                             </div>
-                        </div>   
-                        
-                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-                            <div class="box-part text-center">
-                                
-                                <i class="fa fa-google-plus fa-3x" aria-hidden="true"></i>
-                            
-                                <div class="title">
-                                    <h4>Google</h4>
-                                </div>
-                                
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-                                
-                                <a href="#">Learn More</a>
-                                
-                             </div>
-                        </div>   
-                        
-                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-                            <div class="box-part text-center">
-                                
-                                <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-                                
-                                <div class="title">
-                                    <h4>Github</h4>
-                                </div>
-                                
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-                                
-                                <a href="#">Learn More</a>
-                                
-                             </div>
-                        </div>
-                </div>      
-            </div>
-        
-            </div>
-
-            <div class="parallax3"></div>
+          <!-- Header -->
+                    <div id="games" class="header w3-animate-opacity">
+                        <p>Checkout some of our games</p>
+                    </div>
+               <!-- Photo Grid -->
+                <div class="row-games w3-animate-opacity"> 
+                    <div class="column">
+                    <img src="/images/Injustice2-SUPERMAN-wallpaper-1920x1080-42.jpg" style="width:100%">
+                    <img src="/images/call-of-duty-wwii-wallpaper-23123761273.jpg" style="width:100%">
+                    </div>
+                    <div class="column">
+                    <img src="/images/doom-vfr-2017-pf-1062474.jpg" style="width:100%">
+                    <img src="/images/assassins.jpeg" style="width:100%">
+                    </div>  
+                    <div class="column">
+                    <img src="/images/fire-wall-zero-hour-featured.png" style="width:100%">
+                    <img src="/images/gran turismo.png" style="width:100%">
+                    </div>
+                </div>  
+            <div class="parallax3 w3-animate-opacity"></div>
 
             <footer class="footer">
-
+                <p class="copyright">Copyright &copy; Vanilla VR 2018</p>
             </footer>
 
             <div class="container">
@@ -257,10 +168,10 @@
             <div id="myNav" class="overlay">            
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
-                  <a href="#">About</a>
-                  <a href="#">Services</a>
-                  <a href="#">Clients</a>
-                  <a href="#">Contact</a>
+                  <a href="#">Home</a>
+                  <a href="#services">Services</a>
+                  <a href="#about">About</a>
+                  <a href="#games">Games</a>
                 </div>
           </div>
 
